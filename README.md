@@ -16,6 +16,6 @@ https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remo
 
 `bun dev`
 
-### Run init tests
+### Run unit tests
 
 `bun test`

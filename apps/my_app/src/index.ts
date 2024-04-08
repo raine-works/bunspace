@@ -11,7 +11,7 @@ export const server = new Elysia({ prefix: '/v1' })
 				}
 			},
 		},
-		(app) => app.use(require('./api/private.router').default)
+		(app) => app.use(require('./api/private.router').default),
 	)
 	.use(require('./api/public.router').default)
 	.group('/api/auth', (app) => {

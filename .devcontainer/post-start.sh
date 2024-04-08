@@ -2,4 +2,4 @@
 
 echo "Spreading some buns!"
 
-source ~/.bashrc | curl -fsSL https://bun.sh/install | bash
+$SHELL | curl -fsSL https://bun.sh/install | bash -s "bun-v1.1.2"

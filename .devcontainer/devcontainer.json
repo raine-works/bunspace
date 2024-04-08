@@ -1,13 +1,16 @@
 {
 	"name": "BunSpace",
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-	"postAttachCommand": "git config --global diff.tool ...",
 	"postStartCommand": "bash .devcontainer/post-start.sh",
+	"runArgs": ["--network=host"],
 	"forwardPorts": [8080],
 	"otherPortsAttributes": {
 		"onAutoForward": "ignore"
 	},
-	"mounts": ["source=${env:HOME}${env:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind"],
+	"mounts": [
+		"source=${env:HOME}${env:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind",
+		"source=${env:HOME}${env:USERPROFILE}/.gitconfig,target=/home/vscode/.gitconfig,type=bind"
+	],
 	"containerEnv": {
 		"BUN_ENV": "development"
 	},

@@ -1,6 +1,6 @@
 {
 	"name": "bunspace",
-	"version": "1.0.0",
+	"version": "0.0.0",
 	"private": true,
 	"workspaces": [
 		"apps/*",
@@ -8,10 +8,11 @@
 	],
 	"scripts": {
 		"format": "bunx prettier --write .",
-		"dev": "bun run --hot apps/my_app/src/index.ts"
+		"dev": "turbo dev"
 	},
 	"devDependencies": {
-		"bun-types": "latest"
+		"bun-types": "latest",
+		"turbo": "^1.13.2"
 	},
 	"peerDependencies": {
 		"typescript": "^5.0.0"

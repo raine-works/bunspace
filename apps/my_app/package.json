@@ -1,12 +1,15 @@
 {
 	"name": "@bunspace/my_app",
+	"version": "0.0.0",
+	"private": true,
 	"module": "src/index.ts",
 	"type": "module",
 	"scripts": {
 		"dev": "bun run --hot src/index.ts"
 	},
 	"devDependencies": {
-		"bun-types": "latest"
+		"bun-types": "latest",
+		"@bunspace/tsconfig": "workspace:*"
 	},
 	"peerDependencies": {
 		"typescript": "^5.0.0"
